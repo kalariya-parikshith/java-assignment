@@ -5,7 +5,6 @@ import com.parikshith.assignment.singleton.Singleton;
 
 public class Main {
     public static void main(String a[]){
-        System.out.println("HI");
         DataVariable dataVariable = new DataVariable();
         dataVariable.printMemberVariables();
         dataVariable.printLocalVariables();
