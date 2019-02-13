@@ -2,23 +2,23 @@ package com.parikshith.assignment.singleton;
 
 public class Singleton{
 
-    String strVariable;
-    private static Singleton obj;
+    String str;
+    private static Singleton singleton;
 
     private Singleton() {}
 
     public static Singleton getInstance(){
-        if(obj == null)
-            obj = new Singleton();
-        return obj;
+        if(singleton == null)
+            singleton = new Singleton();
+        return singleton;
     }
 
-    public static Singleton objectOfThisClass(String strVariable){
-        obj.strVariable = strVariable;
-        return obj;
+    public static Singleton objectOfThisClass(String str){
+        singleton.str = str;
+        return singleton;
     }
 
     public void printString(){
-        System.out.println("String: " + this.strVariable);
+        System.out.println("String: " + this.str);
     }
 }
